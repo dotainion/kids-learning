@@ -19,7 +19,7 @@ export const TalkProvider = ({children}) =>{
     <button 
       onClick={toggleListen} 
       className={`round-btn ${cssClass} ${listening && 'talking-border'}`} 
-    >{listening ? 'Off' : 'Talk'}</button>
+    >{listening ? 'Done' : 'Talk'}</button>
   )
 
   if (!browserSupportsSpeechRecognition) {
